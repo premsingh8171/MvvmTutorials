@@ -1,7 +1,7 @@
 package com.premsinghdaksha.mvvmtutorials.clicklistener;
 
-import com.premsinghdaksha.mvvmtutorials.viewmodel.NewsViewModel;
+import com.premsinghdaksha.mvvmtutorials.viewmodel.UserViewModel;
 
 public interface ItemClickEvent {
-    public void onItemClick(NewsViewModel newsViewModel);
+    public void onItemClick(UserViewModel userViewModel);
 }
