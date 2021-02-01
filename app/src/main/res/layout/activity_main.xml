@@ -2,12 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
+<!--    <data>-->
 
-        <variable
-            name="user"
-            type="com.premsinghdaksha.mvvmtutorials.viewmodel.UserViewModel" />
-    </data>
+<!--        <variable-->
+<!--            name="listview"-->
+<!--            type="com.premsinghdaksha.mvvmtutorials.viewmodel.ListViewModel" />-->
+<!--    </data>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,33 +19,14 @@
         tools:context=".activity.MainActivity">
 
 
-        <TextView
+        <ListView
+            android:id="@+id/listview"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
-            android:text="@{user.email_vm}" />
+            android:text="" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal"
-            android:text="@={user.email_vm}" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal"
-            android:text="@{user.password_vm}" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal"
-            android:text="@={user.password_vm}" />
     </LinearLayout>
 </layout>
 
