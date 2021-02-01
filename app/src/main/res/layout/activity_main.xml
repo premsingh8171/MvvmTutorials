@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
-        android:gravity="center"
+        android:maxLines="1"
         android:orientation="vertical"
-        tools:context=".activity.MainActivity">
+        android:padding="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:spanCount="1" />
+</LinearLayout>
 
-        <ListView
-            android:id="@+id/listview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:maxLines="1"
-            android:padding="5dp" />
-    </LinearLayout>
-
-
-</layout>

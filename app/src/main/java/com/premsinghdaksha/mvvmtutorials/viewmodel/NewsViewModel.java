@@ -3,25 +3,26 @@ package com.premsinghdaksha.mvvmtutorials.viewmodel;
 import com.premsinghdaksha.mvvmtutorials.model.NewsModel;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class NewsViewModel {
-    public String header_Vm;
+    public String title_vm;
     public String desc_Vm;
 
     public NewsViewModel() {
     }
 
     public NewsViewModel(NewsModel newsModel) {
-        this.header_Vm = newsModel.header;
+        this.title_vm = newsModel.title;
         this.desc_Vm = newsModel.desc;
     }
 
-    public String getHeader_Vm() {
-        return header_Vm;
+    public String getTitle_Vm() {
+        return title_vm;
     }
 
-    public void setHeader_Vm(String header_Vm) {
-        this.header_Vm = header_Vm;
+    public void setTitle_Vm(String title_vm) {
+        this.title_vm = title_vm;
     }
 
     public String getDesc_Vm() {
@@ -32,7 +33,7 @@ public class NewsViewModel {
         this.desc_Vm = desc_Vm;
     }
 
-    public ArrayList<NewsViewModel> getArrayListNews() {
+    public List<NewsViewModel> getArrayListNews() {
         ArrayList<NewsViewModel> list = new ArrayList<>();
         NewsViewModel newsViewModel1 = new NewsViewModel(new NewsModel("First Header", "This is a first header"));
         NewsViewModel newsViewModel2 = new NewsViewModel(new NewsModel("Second Header", "This is a Second header"));

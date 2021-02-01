@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <data>
+    <data class="NewsBinding">
 
         <variable
             name="newslist"
@@ -12,6 +12,7 @@
     <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         app:cardCornerRadius="10dp">
 
         <LinearLayout
@@ -24,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="@{newslist.header_Vm}"
+                android:text="@{newslist.title_vm}"
                 android:textColor="@color/white" />
 
             <TextView
